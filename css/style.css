@@ -8,6 +8,7 @@ body {
     background-color: #f8f9fa;
     background-image: url('https://www.bing.com/th/id/OGC.11a5070b4cb1b55452428c7ca66b0220?pid=1.7&rurl=https%3a%2f%2fmedia4.giphy.com%2fmedia%2fnNOAPjUdo4mpZFkDf8%2fgiphy.gif%3fcid%3d790b7611a8f4e135d3e6eae1ccce37e2826fdc688fd308a4%26rid%3dgiphy.gif%26ct%3dg&ehk=wlcJ7%2fKJUjUSWUd0zNhy%2bwDXbLkfuCzOBwDOnbNX6XU%3d');
 }
+/* style for my mainContent */
 main {
     flex: 1;
     display: flex;
@@ -18,7 +19,7 @@ main {
 .container {
     perspective: 1000px;
 }
-
+ /* style for landingpage Welcome text */
 .text {
     font-family: 'Pacifico', sans-serif;
     display: inline-block;
@@ -26,17 +27,21 @@ main {
     transform-style: preserve-3d;
     transform: rotateX(45deg) rotateZ(5deg);
 }
-
+ /* style for landingpage Welcome text ( targeting single element ) */
 .landingP {
     display: inline-block;
     transform-origin: center center -50px;
     transition: transform 0.5s;
+    font: bolder;
+    box-shadow: 1vw 1vw 1vw 1vw;
+    background-color: rgba(172, 255, 47, 0.565);
+    font-size: 80px;
 }
-
+/* style for hover */
 .landingP:hover {
-    transform: rotateX(-45deg) rotateZ(-45deg) scale(1.2);
+    transform: rotateX(-45deg) rotateZ(-45deg) scale(0.5);
 }
-
+/* style for footer */
 footer {
     font-weight: bolder;
     font-size: larger;
@@ -44,26 +49,47 @@ footer {
     background-repeat: no-repeat;
     background-image: url(https://th.bing.com/th/id/OIP.cHm2FkAJAqmPs8I2qSAibgAAAA?rs=1&pid=ImgDetMain);
 }
+
+/* style for logo */
 img {
     aspect-ratio: 1/1;
     width: 4rem;
 }
+
+ /* style for NAvbar */
 .navbar{
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://th.bing.com/th/id/OIP.cHm2FkAJAqmPs8I2qSAibgAAAA?rs=1&pid=ImgDetMain);
 }
+/* style for the name of the company */
 h6{
-    font-size: 0px;
+    font-size: 15px;
     color: darkcyan;
     font-style: italic;
     box-shadow: black;
 
 
 }
-#pic{
+
+/* style for product btn  */
+#B{
     aspect-ratio: 1/1;
-    width: 5rem;
+    width: 7rem;
  
 }
 
+/* style for heading tags  */
+h1{
+    font-family:'Anton' , sans-serif;
+    font-size: large;
+    font-style: oblique;
+}
+
+h3{
+    font-size: xx-large;
+    font-family: 'Anton' , sans-serif;
+    margin: 5%;
+    
+}
