@@ -1,2 +1,1 @@
-document.querySelector('currYear').textContent =
-new Date().getUTCFullYear()
+document.getElementById('CurrYear').textContent = new Date().getFullYear()
