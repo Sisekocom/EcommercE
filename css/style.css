@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f8f9fa;
+    background-image: url('https://th.bing.com/th/id/R.a2b3268c384d858b81b623cd466a169c?rik=Hwf5a3VY3D63JA&pid=ImgRaw&r=0');
+}
+
+
+.container {
+    perspective: 1000px;
+}
+
+footer {
+    font-weight: bolder;
+    font-size: larger;
+}
+img{
+    aspect-ratio: 1/1;
+    width: 4rem;
+}
+ul{
+    font-size: larger;
+}
