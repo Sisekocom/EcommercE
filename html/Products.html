@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav class="navbar bg-danger  fixed-top">
+  <nav class="navbar  bg-danger  ">
     <div class="container-fluid">
       <a href="./index.html"> <img src="https://i.postimg.cc/d0bpKTM7/R-removebg-preview-1.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -59,10 +59,71 @@
       </div>
     </div>
   </nav>
-      <main></main>
+      <main class="container-fluid">
+        <div class="container searchh">
+          <div 
+         class="searchBar" id="products">
+              <input type="text" id="Input" placeholder="Search products">
+              <button onclick="searchProducts()">Search</button>
+          </div>
+  
+
+          <div 
+          id="Sortt"  class="sortingButtons">
+              <label for="sortSelect">Sort by:</label>
+              <select id="sortSelect" onchange="sortProducts()">
+                  <option value="price">Price</option>
+              </select>
+            </div>
+
+            <div id="output">
+
+            </div>
+          </div>
+      </main>
+
+<script src="../script/product.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <footer class="bg-light text-center py-3">
         <div class="container">
-            <p>&copy; 2023 Welcome to Gadget Galaxy. All rights reserved.</p>
+            <p>&copy; 2023 Gadget Galaxy. All rights reserved.</p>
         </div>
     </footer>
 

@@ -10,10 +10,7 @@ body {
 }
 /* style for my mainContent */
 main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+height: 1700px;
 }
 
 .container {
@@ -25,7 +22,7 @@ main {
     display: inline-block;
     font-size: 3em;
     transform-style: preserve-3d;
-    transform: rotateX(45deg) rotateZ(5deg);
+    transform: rotateX(25deg) rotateZ(15deg);
 }
  /* style for landingpage Welcome text ( targeting single element ) */
 .landingP {
@@ -36,6 +33,7 @@ main {
     box-shadow: 1vw 1vw 1vw 1vw;
     background-color: rgba(172, 255, 47, 0.565);
     font-size: 80px;
+    margin-top: 10%;
 }
 /* style for hover */
 .landingP:hover {
@@ -48,6 +46,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://th.bing.com/th/id/OIP.cHm2FkAJAqmPs8I2qSAibgAAAA?rs=1&pid=ImgDetMain);
+
 }
 
 /* style for logo */
@@ -57,6 +56,10 @@ img {
 }
 
  /* style for NAvbar */
+ .nav-link{
+       font-size: larger;
+       text-decoration: solid;
+ }
 .navbar{
     
     background-size: cover;
@@ -90,6 +93,38 @@ h1{
 h3{
     font-size: xx-large;
     font-family: 'Anton' , sans-serif;
-    margin: 5%;
+    margin: 10%;
     
+}
+/* searchBar&sortingButton style  */
+.searchh{
+    margin-top: 1%;
+    text-align: start;
+    margin-right: 100%;
+    
+    
+}
+
+#output{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+}
+img{
+    border-radius: 60%;
+}
+h4{
+    font-size: medium;
+}
+h5{
+    font-size: medium;
+}
+.card{
+    background-color: rgba(57, 146, 57, 0.584);
+  
+}
+
+
+#fo{
+    height: 680px;
+
 }
