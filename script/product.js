@@ -134,19 +134,19 @@ displayResults()
 
 // functionality for sort btn 
 
-function sortItems() {
-    let sortt = getSortt();
-    l
-    Sortt.sort((a, b) => a.name.localeCompare(b.name));
-    saveSortt(Sortt);
-    displayItems();
-function Sortt () {
-    const storedSortt = localStorage.getItem('Sortt');
-    return storedSortt ? JSON.parse(storedSortt) : [];
-}
-function saveSortt(Sortt) {
-    localStorage.setItem('Sortt', JSON.stringify(Sortt));
-    }} 
+// function sortItems() {
+//     let sortt = getSortt();
+//     l
+//     Sortt.sort((a, b) => a.name.localeCompare(b.name));
+//     saveSortt(Sortt);
+//     displayItems();
+// function Sortt () {
+//     const storedSortt = localStorage.getItem('Sortt');
+//     return storedSortt ? JSON.parse(storedSortt) : [];
+// }
+// function saveSortt(Sortt) {
+//     localStorage.setItem('Sortt', JSON.stringify(Sortt));
+//     }} 
 
 // if (Sortt.length === 0) {
 //     output.innerHTML = '<p>the item not found.</p>';}
