@@ -10,7 +10,7 @@ body {
 }
 /* style for my mainContent */
 main {
-height: 1700px;
+height: 1100px;
 }
 
 .container {
@@ -129,3 +129,10 @@ h5{
     height: 680px;
 
 }
+#oo{
+    background-color: lightgreen;
+
+}
+#oi{
+    background-image: url(https://th.bing.com/th/id/R.ad579e0dc90f8db028c7757c240d6919?rik=V8fE%2fnqAbqQxwg&pid=ImgRaw&r=0); }
+    
