@@ -1,6 +1,6 @@
-// document.getElementById('CurrYear').textContent = new Date().getFullYear()
+
 let output = document.getElementById('output')
-// I must have an empty array  to add the products
+
 let myProducts = [];
 
 // list of products 
@@ -60,7 +60,7 @@ function displayResults(){
 
             output.innerHTML += 
             `
-            <div  class="card m-5" style="width: 17rem;">
+            <div  class="card m-5" style="width: 15rem;">
             <img src="${item.image} " class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${item.name}</h5>

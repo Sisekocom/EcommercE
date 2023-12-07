@@ -1,48 +1,65 @@
 
-let cartSize = JSON.parse(localStorage.getItem('Checkout')).length || 0
-console.log(cartSize);
+let checkoutItems = JSON.parse(localStorage.getItem('Checkout')) || [];
+let display = document.querySelector('.displayItems')
 
-document.querySelector('[cartSize]').textContent = cartSize;
+function displayInTable(){
+  // console.log(checkoutItems);
+  
+  let groupObject = Object.groupBy(checkoutItems, item => {
+    // console.log(item);
+    return item.id;
+  })
+  // I want to display the items in a table one by one 
+// For in loop, is used to loop through index of each added item in the checkout
 
-let List = JSON.parse(localStorage.getItem('checkout')) ?
-    JSON.parse(localStorage.getItem('checkout')) : [];
-let tbody = document.querySelector('tbody');
-(function displayCheckOut() {
-    try {
-        if (!List.length) throw "Please add the product to the checkout list.";
-        let groupBy = Object.groupBy(List, item => {
-            return item.id
-        })
-        let amountDue = 0;
-        for (let idx in groupBy) {
-            let totalAmount = groupBy[idx].length * groupBy[idx][0].amount;
-            amountDue += totalAmount;
-            tbody.innerHTML += `
-                <tr>
-                    <td>${groupBy[idx][0].name}</td>
-                    <td>${groupBy[idx][0].amount}</td>
-                    <td>${groupBy[idx].length}</td>
-                    <td>R${totalAmount}</td>
-                </tr>
-            `
-        }
-        // Display the amount due
-        tbody.innerHTML += `
-            <tr class="amount-due">
-                <td></td>                    
-                <td></td>                    
-                <td>Amount Due:</td> 
-                <td>R${amountDue}</td>
-            </tr>
-        `
-    } catch (e) {
-        tbody.innerText = e;
-        tbody.style = "font-weight: bold; font-size: 8rem;"
+  for (let item in groupObject) {
+    let qty = groupObject[item].length
+
+    let amoutPerItem  = groupObject[item][0].amount * qty
+
+    console.log(amoutPerItem);
+    // console.log(qty);
+
+    // console.log(groupObject[item][0].name);
+
+    display.innerHTML += 
+    `
+    <tr>
+      <td>${groupObject[item][0].name}</td>
+      <td>${amoutPerItem}</td>
+      <td>${qty}</td>
+     
+    </tr>
+    `
+  }
+
+}
+
+displayInTable()
+
+document.addEventListener('DOMContentLoaded', function () {
+  const clearButton = document.getElementById('clear');
+  clearButton.addEventListener('click', function () {
+    clearTableItems();
+  });
+  function clearTableItems() {
+    const displayItems = document.querySelector('.displayItems');
+    displayItems.innerHTML = '';
+  }
+});
+
+document.querySelector('[purchaseBtn]').addEventListener('click', ()=>{
+  let backdrop = document.querySelector('.modal-backdrop')
+  try{
+    if(backdrop){
+      backdrop.style.display = 'none'
     }
-})();
-
-let clearAll = document.querySelector('#clearAll');
-clearAll.addEventListener('click', () => {
-    localStorage.removeItem('checkout');
-    tbody.innerHTML = "Please add the product to the checkout list.";
+    
+  }catch(e) {
+    console.log(e)
+  } finally{
+    if(backdrop){
+      breakackdrop.style.display = 'none'
+    }
+  }
 })
