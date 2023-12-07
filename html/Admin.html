@@ -7,7 +7,6 @@
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   
      <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,18 +49,86 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./Contact.html">Contact</a>
             </li>
+
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
       </div>
     </div>
   </nav>
-      <main></main>
-      <footer class="bg-light text-center py-3">
+  <main id="o" >
+    <div class="container searchh">
+      <main class="container-fluid">
         <div class="container">
-            <p>&copy; 2023 Welcome to Gadget Galaxy. All rights reserved.</p>
+          <div class="row d-flex justify-content-between flex-md-row flex-column gap-2">
+            <div class="col">
+              <button class="btn btn-success ms-2" id="sorting">Sorting</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-success me-2" id="addProducts" data-bs-toggle="modal" data-bs-target="#addNewProduct">
+                Add new products
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="addNewProduct" tabindex="-1" aria-labelledby="addNewProductLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addNewProductLabel">
+                      Add a new product
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form g-2">
+                      <div class="container">
+                        <input class="form-control" type="text" placeholder="Enter Name" name="addName"
+                          id="addName" required />
+                        <input class="form-control" type="number" placeholder="Enter Amount" name="addAmount"
+                          id="addAmount" required />
+                        <input class="form-control my-2" type="url" placeholder="Enter url" name="addImage"
+                          id="addImage" required />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer my-2">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-success" id="saveProduct">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" data-scroll>
+            <table class="table table-responsive">
+              <thead>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Action</th>
+              </thead>
+              <tbody data-admin></tbody>
+            </table>
+          </div>
         </div>
-    </footer>
+      </main>
+    
+      </div>
+  </main>
+  <footer class="bg-light text-center py-3">
+    <div class="container">
+        <p>&copy; 2023 Welcome to Gadget Galaxy. All rights reserved.</p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+    <script src="../script/admin.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

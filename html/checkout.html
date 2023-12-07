@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-   
-     <!-- Style link  -->
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+
+
+  <!-- Style link  -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -54,17 +53,66 @@
       </div>
     </div>
   </nav>
-      <main></main>
-      <footer class="bg-light text-center py-3">
-        <div class="container">
-            <p>&copy; 2023 Welcome to Gadget Galaxy. All rights reserved.</p>
-        </div>
-    </footer>
+  <main id="Hoo">
+    <div class="container">
+      <table class="table ">
+        <h3>Checkout</h3>
+        <thead>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Quantity</th>
 
-    <script src="script.js"></script>
+        </thead>
+        <tbody class="displayItems">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        </tbody>
+        <tfoot>
+          <tr>
+
+            <td>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#purchaseModal" purchaseBtn>
+                Purchase
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-white">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="purchaseModallLabel">Thank for your purchase</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button id="clear" class="btn btn-danger">Clear</button>
+            </td>
+
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </main>
+  <footer class="bg-light text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 Welcome to Gadget Galaxy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+  <script src="../script/checkout.js"></script>
 </body>
-</html>  
+
+</html>

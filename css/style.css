@@ -8,23 +8,23 @@ body {
     background-color: #f8f9fa;
     background-image: url('https://www.bing.com/th/id/OGC.11a5070b4cb1b55452428c7ca66b0220?pid=1.7&rurl=https%3a%2f%2fmedia4.giphy.com%2fmedia%2fnNOAPjUdo4mpZFkDf8%2fgiphy.gif%3fcid%3d790b7611a8f4e135d3e6eae1ccce37e2826fdc688fd308a4%26rid%3dgiphy.gif%26ct%3dg&ehk=wlcJ7%2fKJUjUSWUd0zNhy%2bwDXbLkfuCzOBwDOnbNX6XU%3d');
 }
+
 /* style for my mainContent */
-main {
-height: 1700px;
-}
 
 .container {
     perspective: 1000px;
 }
- /* style for landingpage Welcome text */
+
+/* style for landingpage Welcome text */
 .text {
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'pacifico', sans-serif;
     display: inline-block;
     font-size: 3em;
     transform-style: preserve-3d;
     transform: rotateX(25deg) rotateZ(15deg);
 }
- /* style for landingpage Welcome text ( targeting single element ) */
+
+/* style for landingpage Welcome text ( targeting single element ) */
 .landingP {
     display: inline-block;
     transform-origin: center center -50px;
@@ -35,10 +35,12 @@ height: 1700px;
     font-size: 80px;
     margin-top: 10%;
 }
+
 /* style for hover */
 .landingP:hover {
     transform: rotateX(-45deg) rotateZ(-45deg) scale(0.5);
 }
+
 /* style for footer */
 footer {
     font-weight: bolder;
@@ -55,77 +57,177 @@ img {
     width: 4rem;
 }
 
- /* style for NAvbar */
- .nav-link{
-       font-size: larger;
-       text-decoration: solid;
- }
-.navbar{
-    
+/* style for NAvbar */
+.nav-link {
+    font-size: larger;
+    text-decoration: solid;
+}
+
+.navbar {
+
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://th.bing.com/th/id/OIP.cHm2FkAJAqmPs8I2qSAibgAAAA?rs=1&pid=ImgDetMain);
 }
+
 /* style for the name of the company */
-h6{
+h6 {
     font-size: 15px;
     color: darkcyan;
     font-style: italic;
     box-shadow: black;
 
 
+
 }
 
 /* style for product btn  */
-#B{
+#B {
     aspect-ratio: 1/1;
     width: 7rem;
- 
+
 }
 
 /* style for heading tags  */
-h1{
-    font-family:'Anton' , sans-serif;
+h1 {
+    font-family: 'pacifico', sans-serif;
     font-size: large;
     font-style: oblique;
 }
 
-h3{
+h3 {
     font-size: xx-large;
-    font-family: 'Anton' , sans-serif;
+    font-family: 'Anton', sans-serif;
     margin: 16%;
-    
+
 }
+
 /* searchBar&sortingButton style  */
-.searchh{
+.searchh {
     margin-top: 1%;
     text-align: start;
     margin-right: 100%;
-    
-    
+
+
 }
 
-#output{
+#output {
     display: grid;
-    grid-template-columns: auto auto auto auto ;
+    grid-template-columns: auto auto auto auto;
 }
-img{
+
+img {
     border-radius: 60%;
 }
-h4{
+
+h4 {
     font-size: medium;
 }
-h5{
+
+h5 {
     font-size: medium;
 }
-.card{
+
+.card {
     background-color: rgba(57, 146, 57, 0.584);
     border-radius: 15%;
-  
+
+}
+
+#oo {
+    background-color: lightgreen;
+
 }
 
 
+
+
+#o {
+    margin: 10%;
+    height: 355px;
+
+}
+
+#pro {
+    height: 1050px;
+    background-image: url(https://th.bing.com/th/id/R.ad579e0dc90f8db028c7757c240d6919?rik=V8fE%2fnqAbqQxwg&pid=ImgRaw&r=0);
+
+}
+
+#i {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1050px;
+    background-image: url(https://www.contrado.co.uk/blog/wp-content/uploads/2020/01/step-9-copy1-1024x683.jpg);
+}
+
+thead {
+    background-color: black;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+table {
+    background-color: rgba(0, 128, 0, 0.373);
+    color: blue;
+
+}
+
+#Hoo {
+
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://th.bing.com/th/id/R.7cc4e1369942e2608637a3d22f6fe446?rik=b9V2qDj95AvTGg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fFree-HD-Light-Blue-Wallpaper-Download.jpg&ehk=pkY1xJI7xlnqe5kvw1UgCyNLtyOrpl67TrN91A835mQ%3d&risl=&pid=ImgRaw&r=0);
+}
+
+section {
+    margin-top: 12%;
+    margin-left: 2%;
+
+    aspect-ratio: 1/1;
+
+}
+
+#fo {
+    height: 690px;
+}
+
+.table {
+    margin-right: 2%;
+    background-color: aquamarine;
+}
+
+h3 {
+   
+    margin-bottom: 10%;
+}
+
+#oi {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1617957718587-60a442884bee?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JlZW4lMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D);
+    height: 700px;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    font-size:large;
+    text-decoration: solid;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    
+
+}
 #fo{
-    height: 680px;
-
+    height: 690px;
 }
+
+/* Purchase Modal */
+/* #purchaseModal{
+    z-index: 100!important;
+}  */
