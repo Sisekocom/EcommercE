@@ -68,26 +68,6 @@ function deleteProduct(index) {
     updateAdminTable();
   }
 }
-document.addEventListener('DOMContentLoaded', function () {
-  const sortingButton = document.getElementById('sorting');
-  sortingButton.addEventListener('click', function () {
-    sortTable();
-  });
-  // sort the table by product name functionn
-  function sortTable() {
-    const tableBody = document.querySelector('[data-admin]');
-    const rows = Array.from(tableBody.children);
-    rows.sort((rowA, rowB) => {
-      const nameA = rowA.cells[0].textContent.trim().toLowerCase();
-      const nameB = rowB.cells[0].textContent.trim().toLowerCase();
-      return nameA.localeCompare(nameB);
-    });
-    tableBody.innerHTML = '';
-    rows.forEach((row) => {
-      tableBody.appendChild(row);
-    });
-  }
-});
 document.querySelector('[productBtn]').addEventListener('click', () => {
   let backdrop = document.querySelector('.modal-backdrop')
   try {

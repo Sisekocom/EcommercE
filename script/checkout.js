@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   function clearTableItems() {
     const displayItems = document.querySelector('.displayItems');
+    localStorage.removeItem('Checkout')
     displayItems.innerHTML = '';
   }
 });
@@ -49,4 +50,39 @@ document.querySelector('[purchaseBtn]').addEventListener('click', () => {
     }
   }
 })
+
+let fullAmount  = [];
+let displaytotal = document.getElementById("fullAmount");
+function calcTotal() {
+  if (cartproducts) {
+    fullAmount = [];
+    for (let key in cartproducts) {
+      let amount = eval(
+        `${cartproducts[key][0].price}*${cartproducts[key].length}`
+      );
+      fullAmount.push(amount);
+      console.log(amountTotal);
+    }
+    let total = fullAmount.reduce(
+      (previousval, newvalue) => previousval + newvalue,
+      0
+    );
+    displaytotal.textContent = "R" + total;
+  }
+}
+calcTotal();
+function clearCart() {
+  localStorage.removeItem("checkout");
+  checks.innerHTML = "";
+  displaytotal.innerHTML = "";
+}
+document.querySelector(".clear").addEventListener("click", clearCart);
+
+
+
+
+
+
+
+
 
