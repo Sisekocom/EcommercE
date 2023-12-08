@@ -45,11 +45,11 @@ let products = JSON.parse(localStorage.getItem('products')) ?
                 }
             ]
         ))
-(
-    function() {
-        console.log(window.location.href);
-    }
-)()
+        (
+            function () {
+                console.log(window.location.href);
+            }
+        )()
 recentWrapper.innerHTML = ""
 if (products) {
     products.reverse().slice(0, products.length >> 1)
@@ -71,7 +71,6 @@ if (products) {
                 <p class="product-amount">Price: R${item.amount}</p>
             </div>
         </div>
-    
         `
         })
 } else {
