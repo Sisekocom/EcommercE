@@ -2,11 +2,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #f8f9fa;
-    background-image: url('https://www.bing.com/th/id/OGC.11a5070b4cb1b55452428c7ca66b0220?pid=1.7&rurl=https%3a%2f%2fmedia4.giphy.com%2fmedia%2fnNOAPjUdo4mpZFkDf8%2fgiphy.gif%3fcid%3d790b7611a8f4e135d3e6eae1ccce37e2826fdc688fd308a4%26rid%3dgiphy.gif%26ct%3dg&ehk=wlcJ7%2fKJUjUSWUd0zNhy%2bwDXbLkfuCzOBwDOnbNX6XU%3d');
+    height: 100vh;
 }
 
 /* style for my mainContent */
@@ -41,6 +37,10 @@ body {
     transform: rotateX(-45deg) rotateZ(-45deg) scale(0.5);
 }
 
+.nav-item:hover {
+    background-color: rgba(225, 169, 169, 0.374);
+}
+
 /* style for footer */
 footer {
     font-weight: bolder;
@@ -61,6 +61,8 @@ img {
 .nav-link {
     font-size: larger;
     text-decoration: solid;
+    cursor: pointer;
+
 }
 
 .navbar {
@@ -143,8 +145,9 @@ h5 {
 
 
 #o {
+
     margin: 10%;
-    height: 355px;
+    height: 100vh;
 
 }
 
@@ -190,6 +193,11 @@ section {
 }
 
 #fo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f8f9fa;
+    background-image: url('https://www.bing.com/th/id/OGC.11a5070b4cb1b55452428c7ca66b0220?pid=1.7&rurl=https%3a%2f%2fmedia4.giphy.com%2fmedia%2fnNOAPjUdo4mpZFkDf8%2fgiphy.gif%3fcid%3d790b7611a8f4e135d3e6eae1ccce37e2826fdc688fd308a4%26rid%3dgiphy.gif%26ct%3dg&ehk=wlcJ7%2fKJUjUSWUd0zNhy%2bwDXbLkfuCzOBwDOnbNX6XU%3d');
+
     height: 690px;
 }
 
@@ -199,15 +207,16 @@ section {
 }
 
 h3 {
-   
+
     margin-bottom: 10%;
 }
 
 #oi {
+    height: 690px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://images.unsplash.com/photo-1617957718587-60a442884bee?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JlZW4lMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D);
-    height: 700px;
+
 
 }
 
@@ -216,15 +225,16 @@ h3 {
 }
 
 p {
-    font-size:large;
+    font-size: large;
     text-decoration: solid;
     color: black;
     font-family: 'Rubik', sans-serif;
-    
+
 
 }
-#fo{
-    height: 690px;
+
+#fo {
+    height: 100vh;
 }
 
 /* Purchase Modal */
